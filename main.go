@@ -27,6 +27,7 @@ func main() {
 	log.Println("encoded resp \n", string(body))
 	// put response as a reader back to body
 	resp.Body = ioutil.NopCloser(bytes.NewBuffer(body))
+	defer resp.Body.Close()
 	if resp.Header.Get("Content-Encoding") == "br" {
 		// do br decoding
 		reader := cbrotli.NewReader(resp.Body)
@@ -36,5 +37,7 @@ func main() {
 			log.Fatal("error decoding br response", err)
 		}
 		log.Println("decoded resp \n", string(respBody))
+	} else {
+		log.Fatal("response not br encoded")
 	}
 }
