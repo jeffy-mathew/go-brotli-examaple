@@ -1,0 +1,3 @@
+github.com/google/brotli v1.0.7 h1:fxwwohNEPaVS6qvtnjwgzRR62Upa70pkw0f9qarjrQs=
+github.com/google/brotli/go/cbrotli v0.0.0-20200709144001-0c5603e07bed h1:oj8I+QitrdnQ06Pzea9OpZJ1qUUZFk0B3q3ORrd/wMU=
+github.com/google/brotli/go/cbrotli v0.0.0-20200709144001-0c5603e07bed/go.mod h1:nOPhAkwVliJdNTkj3gXpljmWhjc4wCaVqbMJcPKWP4s=
